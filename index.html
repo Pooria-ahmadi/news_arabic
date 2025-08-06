@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>صفحه اصلی</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            vazir: ['Vazirmatn', 'sans-serif'],
+          },
+          colors: {
+            primary: '#0f766e',
+          },
+        },
+      },
+    }
+  </script>
+  <link href="https://fonts.googleapis.com/css2?family=Vazirmatn&display=swap" rel="stylesheet">
+</head>
+<body class="font-vazir bg-gray-100">
+  <nav class="bg-white py-4">
+    <div class="max-w-6xl mx-auto px-4">
+      <div class="flex justify-between items-center h-16">
+        <div class="flex-shrink-0">
+          <a href="#">
+            <img src="image/logo.png" alt="">
+          </a>
+        </div>
+        <div class="md:hidden">
+          <button id="menu-toggle" class="text-gray-600 focus:outline-none">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor"
+              viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <path stroke-linecap="round" stroke-linejoin="round"
+                stroke-width="2"
+                d="M4 6h16M4 12h16M4 18h16"></path>
+            </svg>
+          </button>
+        </div>
+        <div id="menu" class="hidden md:flex space-x-6 space-x-reverse items-center">
+          <a href="#" class="hover:text-blue-500 px-4 text-gray-700 text-lg">خانه</a>
+          <a href="#" class="hover:text-blue-500 px-4 text-gray-700 text-lg">درباره ما</a>
+          <a href="#" class="hover:text-blue-500 px-4 text-gray-700 text-lg">خدمات</a>
+          <a href="#" class="hover:text-blue-500 px-4 text-gray-700 text-lg">تماس با ما</a>
+        </div>
+
+      </div>
+    </div>
+
+    <div id="mobile-menu" class="md:hidden hidden px-4 pb-4">
+      <a href="#" class="block py-2 text-gray-700 hover:text-blue-500">خانه</a>
+      <a href="#" class="block py-2 text-gray-700 hover:text-blue-500">درباره ما</a>
+      <a href="#" class="block py-2 text-gray-700 hover:text-blue-500">خدمات</a>
+      <a href="#" class="block py-2 text-gray-700 hover:text-blue-500">تماس با ما</a>
+    </div>
+  </nav>
+  <div class="relative w-full mx-auto">
+    <img src="image/background-target.jpg" alt="عکس بزرگ" class="w-full h-auto border-t-2 border-yellow-600">
+    <div class="absolute bottom-6 left-1/2 transform -translate-x-1/2 flex gap-4">
+      <img src="image/img1.jpg" alt="عکس 1" class="w-24 h-24 object-cover rounded-lg shadow-md border-2 border-white">
+      <img src="image/img2.jpg" alt="عکس 2" class="w-24 h-24 object-cover rounded-lg shadow-md border-2 border-white">
+      <img src="image/img3.jpg" alt="عکس 3" class="w-24 h-24 object-cover rounded-lg shadow-md border-2 border-white">
+    </div>
+  </div>
+  <div class="flex items-center gap-4 border-b-4 border-yellow-600">
+    <div class="text-lg font-semibold text-gray-800 whitespace-nowrap">
+      آخر الأخبار
+    </div>
+    <div class="relative overflow-hidden w-full border border-yellow-500 rounded px-2 py-1">
+      <div class="marquee text-yellow-700 font-medium">
+   الأمن العام يكشف جريمة قتل سيّدة في محافظة إربد بعد تتبع معلومات وردت حول اختفائها دون التعميم عنها
+      </div>
+    </div>
+
+  </div>
+</div>
+  <script>
+    const toggleBtn = document.getElementById('menu-toggle');
+    const mobileMenu = document.getElementById('mobile-menu');
+
+    toggleBtn.addEventListener('click', () => {
+      mobileMenu.classList.toggle('hidden');
+    });
+  </script>
+
+</body>
+<style>
+  @keyframes marquee {
+    0%   { transform: translateX(100%); }
+    100% { transform: translateX(-100%); }
+  }
+
+  .marquee {
+    animation: marquee 10s linear infinite;
+    white-space: nowrap;
+  }
+</style>
+</html>
