@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="fa" dir="rtl">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -21,7 +22,8 @@
   </script>
   <link href="https://fonts.googleapis.com/css2?family=Vazirmatn&display=swap" rel="stylesheet">
 </head>
-<body class="font-vazir bg-gray-100">
+
+<body class="font-vazir">
   <nav class="bg-white py-4">
     <div class="max-w-6xl mx-auto px-4">
       <div class="flex justify-between items-center h-16">
@@ -31,12 +33,10 @@
           </a>
         </div>
         <div class="md:hidden">
-          <button id="menu-toggle" class="text-gray-600 focus:outline-none">
-            <svg class="w-6 h-6" fill="none" stroke="currentColor"
-              viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-              <path stroke-linecap="round" stroke-linejoin="round"
-                stroke-width="2"
-                d="M4 6h16M4 12h16M4 18h16"></path>
+          <button id="menu-toggle" class="text-gray-600">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
             </svg>
           </button>
         </div>
@@ -65,18 +65,93 @@
       <img src="image/img3.jpg" alt="عکس 3" class="w-24 h-24 object-cover rounded-lg shadow-md border-2 border-white">
     </div>
   </div>
-  <div class="flex items-center gap-4 border-b-4 border-yellow-600">
-    <div class="text-lg font-semibold text-gray-800 whitespace-nowrap">
-      آخر الأخبار
-    </div>
-    <div class="relative overflow-hidden w-full border border-yellow-500 rounded px-2 py-1">
-      <div class="marquee text-yellow-700 font-medium">
-   الأمن العام يكشف جريمة قتل سيّدة في محافظة إربد بعد تتبع معلومات وردت حول اختفائها دون التعميم عنها
+  <div class="max-w-6xl mt-6 mx-auto w-full">
+    <div class="flex items-center gap-4 border border-b-4 border-gray-300 border-b-yellow-500 px-4 py-1 ">
+      <div class="border-blue-500 border-l-4 md:px-24 ml-4 text-center text-gray-600 w-40 whitespace-nowrap">
+        آخر الأخبار
+      </div>
+      <div class="overflow-hidden px-2 py-1 relative w-full">
+        <div class="marquee text-gray-700 font-medium">
+          الأمن العام يكشف جريمة قتل سيّدة في محافظة إربد بعد تتبع معلومات وردت حول اختفائها دون التعميم عنها
+        </div>
       </div>
     </div>
+  </div>
+  <div class="w-5/6 mx-auto text-center mt-12">
+    <p class="md:text-[35px] text-lg leading-relaxed">
+      رسالة جلالة الملك عبدالله الثاني - حفظه الله - إلى عطوفة مدير الأمن العام اللواء عبيد الله المعايطة
+    </p>
+  </div>
+  <p class="w-full text-center text-gray-600 text-lg mt-12">
+    بسم الله الرحمن الرحيم
+  </p>
+  <ul class="md:w-4/6 mt-6 mx-auto text-gray-600 text-lg text-right w-5/6">
+    <li>عطوفة الأخ اللواء عبيد الله المعايطة ، مدير الأمن العام حفظه الله ،</li>
+    <li class="my-6">السلام عليكم ورحمة الله وبركاته وبعد ،</li>
+    <li class="leading-relaxed">أما وقد صدرت إرادتنا بتعيينكم مديراً للأمن العام ، فإنني أبعث إليكم بتحية الاعتزاز
+      والتقدير ولجميع منتسبي
+      المديرية العامة للأمن العام على جهودكم المخلصة وتفانيكم في خدمة المواطنين وحماية أمنهم وأمن وطننا الحبيب . ...
+    </li>
+  </ul>
+  <div class="text-center w-4/6 mx-auto mt-16">
+    <button class="bg-blue-600 md:w-40 py-1 rounded text-white w-5/6">
+      اقرأ المزيد
+    </button>
+  </div>
+  <p class="w-full text-center text-[35px] text-gray-900 font-bold mt-12">
+    أهم الأخبار
+  </p>
+  <div class="grid grid-cols-1 md:grid-cols-3 gap-8 w-5/6 mx-auto mt-12 mb-8">
+    <div class="border border-gray-400 rounded-xl ">
+      <img src="image/urgent.jpg" alt="عکس ۱" class="w-full h-48 object-cover rounded-md mb-4">
+      <div class="px-4">
+        <p class="text-sm text-gray-700 mb-2">29/07/2025 01:05 م</p>
+        <h1 class="text-gray-700 mb-4 font-bold">مدير الأمن العام يفتتح مصنع "لوحات أرقام المركبات في مشاغل الأمن العام/
+          الموقر</h1>
+        <p class="text-sm text-gray-700 mb-2">تُباشر مديرية الأمن العام تطبيق خطة أمنية ومرورية مشددة تزامناً مع إعلان
+          نتائج الثانوية العامة، بهدف توفير الأجواء الآمنة للمواطنين</p>
+      </div>
+      <div class="text-center">
+        <button class="border border-orange-500 hover:bg-orange-500 hover:text-white py-2 rounded-full w-32 mt-3 mb-6">
+          المزید
+        </button>
+      </div>
+    </div>
+    <div class="border border-gray-400 rounded-xl ">
+      <img src="image/Carousel2.jpg" alt="عکس ۱" class="w-full h-48 object-cover rounded-md mb-4">
+      <div class="px-4">
+        <p class="text-sm text-gray-700 mb-2">29/07/2025 01:05 م</p>
+        <h1 class="text-gray-700 mb-4 font-bold">مدير الأمن العام يفتتح مصنع "لوحات أرقام المركبات في مشاغل الأمن العام/
+          الموقر</h1>
+        <p class="text-sm text-gray-700 mb-2">تُباشر مديرية الأمن العام تطبيق خطة أمنية ومرورية مشددة تزامناً مع إعلان
+          نتائج الثانوية العامة، بهدف توفير الأجواء الآمنة للمواطنين</p>
+      </div>
+      <div class="text-center">
+        <button class="border border-orange-500 hover:bg-orange-500 hover:text-white py-2 rounded-full w-32 mt-3 mb-6">
+          المزید
+        </button>
+      </div>
+    </div>
+    <div class="border border-gray-400 rounded-xl ">
+      <img src="image/Carousel3.jpg" alt="عکس ۱" class="w-full h-48 object-cover rounded-md mb-4">
+      <div class="px-4">
+        <p class="text-sm text-gray-700 mb-2">29/07/2025 01:05 م</p>
+        <h1 class="text-gray-700 mb-4 font-bold">مدير الأمن العام يفتتح مصنع "لوحات أرقام المركبات في مشاغل الأمن العام/
+          الموقر</h1>
+        <p class="text-sm text-gray-700 mb-2">تُباشر مديرية الأمن العام تطبيق خطة أمنية ومرورية مشددة تزامناً مع إعلان
+          نتائج الثانوية العامة، بهدف توفير الأجواء الآمنة للمواطنين</p>
+      </div>
+      <div class="text-center">
+        <button class="border border-orange-500 hover:bg-orange-500 hover:text-white py-2 rounded-full w-32 mt-3 mb-6">
+          المزید
+        </button>
+      </div>
+    </div>
+  </div>
+
+
 
   </div>
-</div>
   <script>
     const toggleBtn = document.getElementById('menu-toggle');
     const mobileMenu = document.getElementById('mobile-menu');
@@ -89,8 +164,13 @@
 </body>
 <style>
   @keyframes marquee {
-    0%   { transform: translateX(100%); }
-    100% { transform: translateX(-100%); }
+    0% {
+      transform: translateX(100%);
+    }
+
+    100% {
+      transform: translateX(-100%);
+    }
   }
 
   .marquee {
@@ -98,4 +178,5 @@
     white-space: nowrap;
   }
 </style>
+
 </html>
